@@ -1,0 +1,66 @@
+print(">>>>>>>>>>>>> Seja bem-vinda(o) ao Quiz da aula 2 <<<<<<<<<<<<<<<")
+print("_________________________________________________________________")
+print(" São 5 perguntas no total, cada uma com somente 1 resposta certa ")
+print("_________________  O tema é: Autoria das frases _________________")
+print(">>>>>>>>>>>>>>>>>>>>>>>>>>> BOA SORTE <<<<<<<<<<<<<<<<<<<<<<<<<<<")
+print('\n')
+corretos = 0
+print('Pegunta nº 1: Quem é o autor da frase "Quando você é jovem, qualquer pessoa que tenha um baseado vira seu amigo"? ',
+      '\n 1) Jair Bolsonaro',
+      '\n 2) Maurílio do Choque de Cultura',
+      '\n 3) Luís Roberto Barroso',
+      '\n 4) Bob Marley')
+resp1 = int(input("Qual a resposta correta? "))
+if resp1 == 2:
+    corretos += 1
+print('\n')
+print('Pegunta nº 2: Quem é o autor da frase "Às vezes a pessoa está bem, você leva ela pro hospital e ela morre"? ',
+      '\n 1) Jair Bolsonaro',
+      '\n 2) Rogerinho do Ingá do Choque de Cultura',
+      '\n 3) Dilma Rousseff',
+      '\n 4) Marcelo Queiroga')
+resp2 = int(input("Qual a resposta correta? "))
+if resp2 == 2:
+    corretos += 1
+print('\n')
+print('Pegunta nº 3: Quem é o autor da frase "O peixe é um bicho inteligente, ele tem medo do óleo"?',
+      '\n 1) Jair Bolsonaro',
+      '\n 2) Renan do Choque de Cultura',
+      '\n 3) Ricardo Salles',
+      '\n 4) Jorge Seif Junior')
+resp3 = int(input("Qual a resposta correta? "))
+if resp3 == 4:
+    corretos += 1
+print('\n')
+print('Pegunta nº 4: Quem é o autor da frase "Costumo dizer que não falo o que o povo quer. Sou o que o povo quer"? ',
+      '\n 1) Jair Bolsonaro',
+      '\n 2) Lula',
+      '\n 3) Neymar',
+      '\n 4) Rogerinho do Choque de Cultura')
+resp4 = int(input("Qual a resposta correta? "))
+if resp4 == 1:
+    corretos += 1
+print('\n')
+print('Pegunta nº 5: Quem é o autor da frase "Há excesso de direitos no Brasil"',
+      '\n 1) Jair Bolsonaro',
+      '\n 2) Renan do Choque de Cultura',
+      '\n 3) Neymar',
+      '\n 4) Sarah do BBB')
+resp5 = int(input("Qual a resposta correta? "))
+if resp5 == 1:
+    corretos += 1
+
+print('\n')
+print(f"Você fez {corretos} pontos.")
+if corretos == 0:
+    print('Você precisa estudar mais!')
+elif corretos == 1:
+    print('O resultado poderia ser melhor')
+elif corretos == 2:
+    print('Você acertou menos da metade das perguntas')
+elif corretos == 3:
+    print('Por duas você não acertou todas. Que pena!')
+elif corretos == 4:
+    print('Quase! Mas você foi muito bem')
+elif corretos == 5:
+    print('Arrasou demais! Você é um expert no assunto')
